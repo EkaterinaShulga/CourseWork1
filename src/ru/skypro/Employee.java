@@ -1,6 +1,6 @@
 package ru.skypro;
 
-public class Employee {
+  class Employee {
     private String nameEmployee;
     private int salaryEmployer;
     private int numberDepartment;
@@ -41,12 +41,19 @@ public class Employee {
 
     public void setSalaryEmployer(int salaryEmployer) {
         this.salaryEmployer = salaryEmployer;
-
-
     }
-    @Override
+
+      public void setNameEmployee(String nameEmployee) {
+          this.nameEmployee = nameEmployee;
+      }
+
+      public void setId(int id) {
+          this.id = id;
+      }
+
+      @Override
     public String toString() {
-        return "Сотрудник: " +   getNameEmployee()  + " работает в отделе №" +  getNumberDepartment() + ", размер его заработной платы составляет " +
+        return getNameEmployee()  + " работает в отделе №" +  getNumberDepartment() + ", размер его заработной платы составляет " +
                 getSalaryEmployer() + ", номер id " +  getId() + ".";
     }
 
